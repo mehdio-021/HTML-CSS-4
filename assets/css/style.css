@@ -1,0 +1,53 @@
+/* استایل های کلی رو اینجا واردمیکنیم مصل رنگ بک گراند و... */
+@font-face {
+    font-family: "IRANSans";
+    src: url("../fonts/IRANSans/IRANSansWeb_Light.woff") format("woff");
+}
+*{
+    direction: rtl;
+    text-align: right;
+    font-family: "IRANSans"
+}
+
+.bg-gray{
+    background-color: #404E67;
+    color: #dcdcdc;
+}
+.pointer{
+    cursor: pointer;
+}
+
+.bg-custom-yellow{
+    background: linear-gradient(to right,#feb798,#fe9365);
+}
+.bg-custom-green{
+    background: linear-gradient(to right,#0df3a3,#0ac282);
+}
+
+.bg-custom-pink {
+    background: linear-gradient(to right, #fe909d, #fe5d78);
+}
+.bg-custom-blue {
+    background: linear-gradient(to right, #01dbdf, #01a9ac);
+}
+@media  only screen and (max-width:767.98px){
+        .sidebar{
+            display: none;
+            width: 320px;
+            z-index: 9;
+            height: calc(100% - 3.5rem);
+            position: fixed;
+            top: 3.5rem;
+            right: 0;
+        }
+        .sidebar-container{
+            position: relative;
+            width: 320px;
+            height: 100%;
+            top: 0;
+        }
+        .main-body{
+            width: 100%;
+            z-index: 1;
+        }
+}
